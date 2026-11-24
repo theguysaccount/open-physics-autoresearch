@@ -1,0 +1,937 @@
+{
+  "DAIRY_90C": {
+    "PURE_CEILING": {
+      "design": {
+        "label": "DAIRY_90C_PURE_CEILING_g10_1",
+        "duty_name": "DAIRY_90C",
+        "topology": "IHX_SUBCOOL",
+        "ihx_eff": 0.82,
+        "ft_pr_bias": 1.0,
+        "components": [
+          "Propane"
+        ],
+        "mole_fractions": [
+          1.0
+        ],
+        "cond_area_frac": 0.5109305519374642,
+        "cond_hx": {
+          "name": "cond",
+          "area_m2": 9.196749934874354,
+          "plate_length_m": 0.4386416710522813,
+          "plate_width_m": 0.38,
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 1.8402801458420657,
+          "plate_thick_mm": 0.4
+        },
+        "evap_hx": {
+          "name": "evap",
+          "area_m2": 8.803250065125646,
+          "plate_length_m": 0.8429480910865383,
+          "plate_width_m": 0.19870697936777676,
+          "chevron_deg": 54.72873785075797,
+          "channel_gap_mm": 2.551122357895617,
+          "plate_thick_mm": 0.4
+        },
+        "superheat_K": 11.130646161527809,
+        "subcool_K": 14.302109167416083
+      },
+      "eval": {
+        "label": "DAIRY_90C_PURE_CEILING_g10_1",
+        "duty_name": "DAIRY_90C",
+        "feasible": true,
+        "violations": [],
+        "COP_sys": 4.2338541610618865,
+        "COP_lorenz_ideal": 11.384067555851603,
+        "eta_lorenz": 0.37191049159626727,
+        "LCOH_usd_MWh": 33.92207808651654,
+        "CAPEX_usd": 61630.68273704103,
+        "VHC_kJ_m3": 5299.282303725046,
+        "V_suc_m3_h": 67.93372750625942,
+        "W_comp_kW": 23.617958628714735,
+        "W_pumps_kW": 0.0011827483512960731,
+        "P_evap_bar": 8.344939631862077,
+        "P_evap_out_bar": 8.330394690117672,
+        "P_cond_bar": 27.846815827322445,
+        "PR": 3.3427966936977263,
+        "T_dis_C": 115.09144767745579,
+        "dis_SH_K": 41.288440417189406,
+        "glide_cond_K": 0.0,
+        "glide_evap_K": 0.0,
+        "sbg_cond": 1.0,
+        "sbg_evap": 1.0,
+        "dP_evap_kPa": 1.4544941744406241,
+        "dP_cond_kPa": 0.2687789761805907,
+        "pinch_cond_K": 0.7454608707384409,
+        "pinch_evap_K": 0.08934123464871391,
+        "gwp": 3.0,
+        "is_pfas": false,
+        "I_comp_kW": 5.000279583619493,
+        "I_cond_kW": 3.904736258705769,
+        "I_evap_kW": 3.0647766527268474,
+        "I_exp_kW": 1.737664244331335,
+        "I_ihx_ft_kW": 0.3741341019497338,
+        "I_pumps_kW": 0.0011827483512960731,
+        "z_evap": [
+          1.0
+        ]
+      },
+      "fluid_short": "C3",
+      "top_diverse": [
+        {
+          "fluid": "C3",
+          "topology": "IHX_SUBCOOL",
+          "COP_sys": 4.2338541610618865,
+          "LCOH": 33.92207808651654,
+          "VHC": 5299.282303725046,
+          "P_suc": 8.330394690117672,
+          "glide_c": 0.0,
+          "glide_e": 0.0
+        },
+        {
+          "fluid": "iC4",
+          "topology": "IHX_SUBCOOL",
+          "COP_sys": 3.9281083442561417,
+          "LCOH": 38.41545843903726,
+          "VHC": 2186.653393177993,
+          "P_suc": 2.9739315152039456,
+          "glide_c": 0.0,
+          "glide_e": 0.0
+        },
+        {
+          "fluid": "nC4",
+          "topology": "IHX_SUBCOOL",
+          "COP_sys": 3.9186055355282297,
+          "LCOH": 40.09246767232266,
+          "VHC": 1608.6918935463227,
+          "P_suc": 2.0093157206042807,
+          "glide_c": 0.0,
+          "glide_e": 0.0
+        }
+      ]
+    },
+    "NAT_ZEO_COP": {
+      "design": {
+        "label": "DAIRY_90C_NAT_ZEO_COP_g14_25",
+        "duty_name": "DAIRY_90C",
+        "topology": "BASIC_1STAGE",
+        "ihx_eff": 0.0,
+        "ft_pr_bias": 1.0,
+        "components": [
+          "Propane",
+          "Isopentane"
+        ],
+        "mole_fractions": [
+          0.47844064894891036,
+          0.5215593510510896
+        ],
+        "cond_area_frac": 0.5310835603000187,
+        "cond_hx": {
+          "name": "cond",
+          "area_m2": 9.559504085400336,
+          "plate_length_m": 0.6647313212933478,
+          "plate_width_m": 0.248529159071016,
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 1.8,
+          "plate_thick_mm": 0.4
+        },
+        "evap_hx": {
+          "name": "evap",
+          "area_m2": 8.440495914599664,
+          "plate_length_m": 0.7922676709257044,
+          "plate_width_m": 0.2798798583181367,
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 2.191905801134089,
+          "plate_thick_mm": 0.4
+        },
+        "superheat_K": 5.220782678975415,
+        "subcool_K": 15.0
+      },
+      "eval": {
+        "label": "DAIRY_90C_NAT_ZEO_COP_g14_25",
+        "duty_name": "DAIRY_90C",
+        "feasible": true,
+        "violations": [],
+        "COP_sys": 5.341676146235979,
+        "COP_lorenz_ideal": 11.384067555851603,
+        "eta_lorenz": 0.4692238622117336,
+        "LCOH_usd_MWh": 31.990805834241748,
+        "CAPEX_usd": 71567.53143694384,
+        "VHC_kJ_m3": 2389.016172420768,
+        "V_suc_m3_h": 150.68964545150624,
+        "W_comp_kW": 18.71734455965655,
+        "W_pumps_kW": 0.0033710476468136433,
+        "P_evap_bar": 2.7879660632113468,
+        "P_evap_out_bar": 2.706629970601898,
+        "P_cond_bar": 10.276056367453906,
+        "PR": 3.796624022887298,
+        "T_dis_C": 92.90209711017337,
+        "dis_SH_K": 4.016045410376421,
+        "glide_cond_K": 32.47050124873948,
+        "glide_evap_K": 37.015820523667685,
+        "sbg_cond": 0.7837483333596066,
+        "sbg_evap": 0.5815423018414687,
+        "dP_evap_kPa": 8.133609260944882,
+        "dP_cond_kPa": 1.653886881781509,
+        "pinch_cond_K": 0.8917922626937411,
+        "pinch_evap_K": 0.44468283541925757,
+        "gwp": 3.0,
+        "is_pfas": false,
+        "I_comp_kW": 4.057883734359739,
+        "I_cond_kW": 2.4039899462794208,
+        "I_evap_kW": 1.3034664444653303,
+        "I_exp_kW": 1.5408603787650434,
+        "I_ihx_ft_kW": 0.0,
+        "I_pumps_kW": 0.0033710476468136433,
+        "z_evap": [
+          0.47844064894891036,
+          0.5215593510510896
+        ]
+      },
+      "fluid_short": "C3(48%)+iC5(52%)",
+      "top_diverse": [
+        {
+          "fluid": "C3(48%)+iC5(52%)",
+          "topology": "BASIC_1STAGE",
+          "COP_sys": 5.341676146235979,
+          "LCOH": 31.990805834241748,
+          "VHC": 2389.016172420768,
+          "P_suc": 2.706629970601898,
+          "glide_c": 32.47050124873948,
+          "glide_e": 37.015820523667685
+        },
+        {
+          "fluid": "C3(49%)+iC5(51%)",
+          "topology": "IHX_SUBCOOL",
+          "COP_sys": 5.311174818111854,
+          "LCOH": 32.10613837711596,
+          "VHC": 2428.1748133894384,
+          "P_suc": 2.770630326355588,
+          "glide_c": 32.391308019443386,
+          "glide_e": 36.94786919808445
+        }
+      ]
+    },
+    "NAT_ZEO_LCOH": {
+      "design": {
+        "label": "DAIRY_90C_NAT_ZEO_LCOH_g14_12",
+        "duty_name": "DAIRY_90C",
+        "topology": "IHX_SUBCOOL",
+        "ihx_eff": 0.05,
+        "ft_pr_bias": 1.0,
+        "components": [
+          "Propane",
+          "Isopentane"
+        ],
+        "mole_fractions": [
+          0.8101846730032252,
+          0.18981532699677492
+        ],
+        "cond_area_frac": 0.5420985980776609,
+        "cond_hx": {
+          "name": "cond",
+          "area_m2": 9.757774765397897,
+          "plate_length_m": 0.9254921719113652,
+          "plate_width_m": 0.2924306645599571,
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 2.140416268174315,
+          "plate_thick_mm": 0.4
+        },
+        "evap_hx": {
+          "name": "evap",
+          "area_m2": 8.242225234602103,
+          "plate_length_m": 0.8074510119677137,
+          "plate_width_m": 0.26774948963777395,
+          "chevron_deg": 54.85312487731816,
+          "channel_gap_mm": 2.1934883179547056,
+          "plate_thick_mm": 0.4
+        },
+        "superheat_K": 5.229517857572334,
+        "subcool_K": 5.487293964659489
+      },
+      "eval": {
+        "label": "DAIRY_90C_NAT_ZEO_LCOH_g14_12",
+        "duty_name": "DAIRY_90C",
+        "feasible": true,
+        "violations": [],
+        "COP_sys": 4.500715917104529,
+        "COP_lorenz_ideal": 11.384067555851603,
+        "eta_lorenz": 0.39535217926487837,
+        "LCOH_usd_MWh": 33.2749817398536,
+        "CAPEX_usd": 64048.98187452217,
+        "VHC_kJ_m3": 3914.8232878773165,
+        "V_suc_m3_h": 91.95817372262493,
+        "W_comp_kW": 22.216329532605204,
+        "W_pumps_kW": 0.002357858873965968,
+        "P_evap_bar": 5.864822103771341,
+        "P_evap_out_bar": 5.820818228187165,
+        "P_cond_bar": 19.46096781991621,
+        "PR": 3.3433388669786948,
+        "T_dis_C": 98.77677484885442,
+        "dis_SH_K": 13.576545334047182,
+        "glide_cond_K": 18.55638107752594,
+        "glide_evap_K": 24.608867652976926,
+        "sbg_cond": 0.8484714678714651,
+        "sbg_evap": 0.5676028691661433,
+        "dP_evap_kPa": 4.400387558417628,
+        "dP_cond_kPa": 1.9655895893555135,
+        "pinch_cond_K": 0.515197164271683,
+        "pinch_evap_K": 1.2004436443885425,
+        "gwp": 3.0,
+        "is_pfas": false,
+        "I_comp_kW": 4.825174790582928,
+        "I_cond_kW": 3.366498569974864,
+        "I_evap_kW": 1.405983190070175,
+        "I_exp_kW": 3.219358255031958,
+        "I_ihx_ft_kW": 0.02072066677081904,
+        "I_pumps_kW": 0.002357858873965968,
+        "z_evap": [
+          0.8101846730032252,
+          0.18981532699677492
+        ]
+      },
+      "fluid_short": "C3(81%)+iC5(19%)",
+      "top_diverse": [
+        {
+          "fluid": "C3(81%)+iC5(19%)",
+          "topology": "IHX_SUBCOOL",
+          "COP_sys": 4.500715917104529,
+          "LCOH": 33.2749817398536,
+          "VHC": 3914.8232878773165,
+          "P_suc": 5.820818228187165,
+          "glide_c": 18.55638107752594,
+          "glide_e": 24.608867652976926
+        },
+        {
+          "fluid": "C3(76%)+nC4(24%)",
+          "topology": "BASIC_1STAGE",
+          "COP_sys": 4.392170228017445,
+          "LCOH": 33.42427720932483,
+          "VHC": 4279.096094454389,
+          "P_suc": 6.256381548334514,
+          "glide_c": 7.46310547411224,
+          "glide_e": 10.799663923194146
+        },
+        {
+          "fluid": "C3(74%)+nC4(26%)",
+          "topology": "IHX_SUBCOOL",
+          "COP_sys": 4.431927884757812,
+          "LCOH": 33.441100461805824,
+          "VHC": 4181.958135850632,
+          "P_suc": 6.033715797322076,
+          "glide_c": 7.963759819304926,
+          "glide_e": 11.334247863305734
+        },
+        {
+          "fluid": "C3(80%)+iC5(20%)",
+          "topology": "FTVI_ECON",
+          "COP_sys": 4.567800965682175,
+          "LCOH": 33.609724773839474,
+          "VHC": 4499.211261472079,
+          "P_suc": 5.36172447524177,
+          "glide_c": 18.922692729511198,
+          "glide_e": 27.097558375537233
+        }
+      ]
+    }
+  },
+  "DISTRICT_110C": {
+    "PURE_CEILING": {
+      "design": {
+        "label": "DISTRICT_110C_PURE_CEILING_g10_26",
+        "duty_name": "DISTRICT_110C",
+        "topology": "FTVI_IHX",
+        "ihx_eff": 0.8169163177673409,
+        "ft_pr_bias": 1.237444769517377,
+        "components": [
+          "R1233zd(E)"
+        ],
+        "mole_fractions": [
+          1.0
+        ],
+        "cond_area_frac": 0.5165968103434451,
+        "cond_hx": {
+          "name": "cond",
+          "area_m2": 9.298742586182012,
+          "plate_length_m": 0.7584174053166727,
+          "plate_width_m": 0.21723884811938976,
+          "chevron_deg": 56.19979567235962,
+          "channel_gap_mm": 2.1848105343367763,
+          "plate_thick_mm": 0.4
+        },
+        "evap_hx": {
+          "name": "evap",
+          "area_m2": 8.701257413817988,
+          "plate_length_m": 0.5186533320335961,
+          "plate_width_m": 0.20908848932707103,
+          "chevron_deg": 61.85291666933855,
+          "channel_gap_mm": 3.3730667975961017,
+          "plate_thick_mm": 0.4
+        },
+        "superheat_K": 21.08888774983075,
+        "subcool_K": 15.0
+      },
+      "eval": {
+        "label": "DISTRICT_110C_PURE_CEILING_g10_26",
+        "duty_name": "DISTRICT_110C",
+        "feasible": true,
+        "violations": [],
+        "COP_sys": 3.6181961371373026,
+        "COP_lorenz_ideal": 10.186061040693966,
+        "eta_lorenz": 0.3552105296328362,
+        "LCOH_usd_MWh": 44.27835304072318,
+        "CAPEX_usd": 92522.90473598365,
+        "VHC_kJ_m3": 1313.012406318349,
+        "V_suc_m3_h": 274.1786736116456,
+        "W_comp_kW": 27.637875762916003,
+        "W_pumps_kW": 0.00020581414285498383,
+        "P_evap_bar": 1.2907811230932331,
+        "P_evap_out_bar": 1.276221490992907,
+        "P_cond_bar": 9.842015322649752,
+        "PR": 7.7118395138391005,
+        "T_dis_C": 129.3629600050428,
+        "dis_SH_K": 32.057113236296345,
+        "glide_cond_K": 0.0,
+        "glide_evap_K": 0.0,
+        "sbg_cond": 1.0,
+        "sbg_evap": 1.0,
+        "dP_evap_kPa": 1.4559632100326125,
+        "dP_cond_kPa": 1.7171478955142665,
+        "pinch_cond_K": 0.9442221655232288,
+        "pinch_evap_K": 0.2845294716009903,
+        "gwp": 4.5,
+        "is_pfas": true,
+        "I_comp_kW": 6.02846353011677,
+        "I_cond_kW": 5.8154767853100795,
+        "I_evap_kW": 3.353787286211043,
+        "I_exp_kW": 1.3394752260374214,
+        "I_ihx_ft_kW": 0.19195450294866329,
+        "I_pumps_kW": 0.00020581414285498383,
+        "z_evap": [
+          1.0
+        ]
+      },
+      "fluid_short": "R1233zdE",
+      "top_diverse": [
+        {
+          "fluid": "R1233zdE",
+          "topology": "FTVI_IHX",
+          "COP_sys": 3.6181961371373026,
+          "LCOH": 44.27835304072318,
+          "VHC": 1313.012406318349,
+          "P_suc": 1.276221490992907,
+          "glide_c": 0.0,
+          "glide_e": 0.0
+        },
+        {
+          "fluid": "nC4",
+          "topology": "FTVI_IHX",
+          "COP_sys": 3.555629459319142,
+          "LCOH": 41.944886521889785,
+          "VHC": 2095.802372380169,
+          "P_suc": 2.3854589817740357,
+          "glide_c": 0.0,
+          "glide_e": 0.0
+        },
+        {
+          "fluid": "R1233zdE",
+          "topology": "IHX_SUBCOOL",
+          "COP_sys": 3.509183553981046,
+          "LCOH": 45.18005665247612,
+          "VHC": 1114.6499413472018,
+          "P_suc": 1.2489324405168565,
+          "glide_c": 0.0,
+          "glide_e": 0.0
+        }
+      ]
+    },
+    "NAT_ZEO_COP": {
+      "design": {
+        "label": "DISTRICT_110C_NAT_ZEO_COP_g16_16",
+        "duty_name": "DISTRICT_110C",
+        "topology": "IHX_SUBCOOL",
+        "ihx_eff": 0.46503124994699646,
+        "ft_pr_bias": 1.0,
+        "components": [
+          "CarbonDioxide",
+          "n-Butane"
+        ],
+        "mole_fractions": [
+          0.18558329082804428,
+          0.8144167091719557
+        ],
+        "cond_area_frac": 0.5194850747981927,
+        "cond_hx": {
+          "name": "cond",
+          "area_m2": 9.35073134636747,
+          "plate_length_m": 0.9086192985709395,
+          "plate_width_m": 0.22366157465780406,
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 1.8,
+          "plate_thick_mm": 0.4
+        },
+        "evap_hx": {
+          "name": "evap",
+          "area_m2": 8.64926865363253,
+          "plate_length_m": 0.7775921370200184,
+          "plate_width_m": 0.3236791704480249,
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 1.8084338835185076,
+          "plate_thick_mm": 0.4
+        },
+        "superheat_K": 12.23758929946476,
+        "subcool_K": 3.3604982818502718
+      },
+      "eval": {
+        "label": "DISTRICT_110C_NAT_ZEO_COP_g16_16",
+        "duty_name": "DISTRICT_110C",
+        "feasible": true,
+        "violations": [],
+        "COP_sys": 4.750455762826269,
+        "COP_lorenz_ideal": 10.186061040693966,
+        "eta_lorenz": 0.46636827953886145,
+        "LCOH_usd_MWh": 32.1781895323424,
+        "CAPEX_usd": 63586.37620048531,
+        "VHC_kJ_m3": 4248.551811986387,
+        "V_suc_m3_h": 84.73475573119678,
+        "W_comp_kW": 21.047341832066625,
+        "W_pumps_kW": 0.003269939235358719,
+        "P_evap_bar": 5.08174558332553,
+        "P_evap_out_bar": 5.0032608038498205,
+        "P_cond_bar": 21.807772885045367,
+        "PR": 4.358711996037686,
+        "T_dis_C": 118.65972216036192,
+        "dis_SH_K": 14.447518123133989,
+        "glide_cond_K": 60.222382393260375,
+        "glide_evap_K": 76.24620323822171,
+        "sbg_cond": 0.7747555841342532,
+        "sbg_evap": 0.7012150172137445,
+        "dP_evap_kPa": 7.848477947570966,
+        "dP_cond_kPa": 1.8982590919048525,
+        "pinch_cond_K": 0.5927210594327335,
+        "pinch_evap_K": 0.7290120274154219,
+        "gwp": 2.7056824613238324,
+        "is_pfas": false,
+        "I_comp_kW": 4.476621543139512,
+        "I_cond_kW": 2.361074352438025,
+        "I_evap_kW": 1.2004385098591124,
+        "I_exp_kW": 2.5732498580467347,
+        "I_ihx_ft_kW": 0.0,
+        "I_pumps_kW": 0.003269939235358719,
+        "z_evap": [
+          0.18558329082804428,
+          0.8144167091719557
+        ]
+      },
+      "fluid_short": "CO2(19%)+nC4(81%)",
+      "top_diverse": [
+        {
+          "fluid": "CO2(19%)+nC4(81%)",
+          "topology": "IHX_SUBCOOL",
+          "COP_sys": 4.750455762826269,
+          "LCOH": 32.1781895323424,
+          "VHC": 4248.551811986387,
+          "P_suc": 5.0032608038498205,
+          "glide_c": 60.222382393260375,
+          "glide_e": 76.24620323822171
+        },
+        {
+          "fluid": "CO2(18%)+nC4(82%)",
+          "topology": "BASIC_1STAGE",
+          "COP_sys": 4.745594350557142,
+          "LCOH": 32.025127225427845,
+          "VHC": 4212.9188347632935,
+          "P_suc": 4.957836511590505,
+          "glide_c": 59.90980566695151,
+          "glide_e": 76.03250419640088
+        }
+      ]
+    },
+    "NAT_ZEO_LCOH": {
+      "design": {
+        "label": "DISTRICT_110C_NAT_ZEO_LCOH_g13_3",
+        "duty_name": "DISTRICT_110C",
+        "topology": "BASIC_1STAGE",
+        "ihx_eff": 0.0,
+        "ft_pr_bias": 1.0,
+        "components": [
+          "CarbonDioxide",
+          "n-Butane"
+        ],
+        "mole_fractions": [
+          0.19281341419038805,
+          0.807186585809612
+        ],
+        "cond_area_frac": 0.46286610325909644,
+        "cond_hx": {
+          "name": "cond",
+          "area_m2": 8.331589858663737,
+          "plate_length_m": 0.9383379968320724,
+          "plate_width_m": 0.2266332052589837,
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 1.81639220149408,
+          "plate_thick_mm": 0.4
+        },
+        "evap_hx": {
+          "name": "evap",
+          "area_m2": 9.668410141336265,
+          "plate_length_m": 0.9475003178725697,
+          "plate_width_m": 0.17699025117797407,
+          "chevron_deg": 64.90895576214317,
+          "channel_gap_mm": 2.178918477817814,
+          "plate_thick_mm": 0.4
+        },
+        "superheat_K": 11.23079836884787,
+        "subcool_K": 2.8182718212193807
+      },
+      "eval": {
+        "label": "DISTRICT_110C_NAT_ZEO_LCOH_g13_3",
+        "duty_name": "DISTRICT_110C",
+        "feasible": true,
+        "violations": [],
+        "COP_sys": 4.748826216769991,
+        "COP_lorenz_ideal": 10.186061040693966,
+        "eta_lorenz": 0.4662083015012502,
+        "LCOH_usd_MWh": 31.928698111864893,
+        "CAPEX_usd": 62448.50578737279,
+        "VHC_kJ_m3": 4347.188940880873,
+        "V_suc_m3_h": 82.81213558825742,
+        "W_comp_kW": 21.054993454038858,
+        "W_pumps_kW": 0.002841774140332622,
+        "P_evap_bar": 5.202145005527364,
+        "P_evap_out_bar": 5.141687504367484,
+        "P_cond_bar": 22.299089415654237,
+        "PR": 4.336920397576245,
+        "T_dis_C": 118.57872905555212,
+        "dis_SH_K": 13.874856928457291,
+        "glide_cond_K": 61.31352062787397,
+        "glide_evap_K": 76.97884584590292,
+        "sbg_cond": 0.7765091165840212,
+        "sbg_evap": 0.682594997193144,
+        "dP_evap_kPa": 6.045750115988078,
+        "dP_cond_kPa": 2.505232290656306,
+        "pinch_cond_K": 0.5145295997290873,
+        "pinch_evap_K": 1.1117687097764701,
+        "gwp": 2.6936530741848186,
+        "is_pfas": false,
+        "I_comp_kW": 4.486262968973661,
+        "I_cond_kW": 2.3439710744324262,
+        "I_evap_kW": 1.1648802383130656,
+        "I_exp_kW": 2.6589223051524216,
+        "I_ihx_ft_kW": 0.0,
+        "I_pumps_kW": 0.002841774140332622,
+        "z_evap": [
+          0.19281341419038805,
+          0.807186585809612
+        ]
+      },
+      "fluid_short": "CO2(19%)+nC4(81%)",
+      "top_diverse": [
+        {
+          "fluid": "CO2(19%)+nC4(81%)",
+          "topology": "BASIC_1STAGE",
+          "COP_sys": 4.748826216769991,
+          "LCOH": 31.928698111864893,
+          "VHC": 4347.188940880873,
+          "P_suc": 5.141687504367484,
+          "glide_c": 61.31352062787397,
+          "glide_e": 76.97884584590292
+        }
+      ]
+    }
+  },
+  "CHEMICAL_135C": {
+    "PURE_CEILING": {
+      "design": {
+        "label": "CHEMICAL_135C_PURE_CEILING_g10_20",
+        "duty_name": "CHEMICAL_135C",
+        "topology": "FTVI_IHX",
+        "ihx_eff": 0.8107204472207987,
+        "ft_pr_bias": 1.2692280433614025,
+        "components": [
+          "R1233zd(E)"
+        ],
+        "mole_fractions": [
+          1.0
+        ],
+        "cond_area_frac": 0.3835638393149083,
+        "cond_hx": {
+          "name": "cond",
+          "area_m2": 6.904149107668349,
+          "plate_length_m": 0.9232421992696761,
+          "plate_width_m": 0.2105616336390555,
+          "chevron_deg": 61.316881183932416,
+          "channel_gap_mm": 2.182406841025209,
+          "plate_thick_mm": 0.4
+        },
+        "evap_hx": {
+          "name": "evap",
+          "area_m2": 11.09585089233165,
+          "plate_length_m": 0.7497459817484158,
+          "plate_width_m": 0.17719460343263504,
+          "chevron_deg": 49.24297413381877,
+          "channel_gap_mm": 2.9117064682020906,
+          "plate_thick_mm": 0.4
+        },
+        "superheat_K": 24.827596579057047,
+        "subcool_K": 15.0
+      },
+      "eval": {
+        "label": "CHEMICAL_135C_PURE_CEILING_g10_20",
+        "duty_name": "CHEMICAL_135C",
+        "feasible": true,
+        "violations": [],
+        "COP_sys": 3.393554069393949,
+        "COP_lorenz_ideal": 9.461425454098453,
+        "eta_lorenz": 0.35867260021838954,
+        "LCOH_usd_MWh": 43.28292685820727,
+        "CAPEX_usd": 81169.88487673968,
+        "VHC_kJ_m3": 2012.3973080172561,
+        "V_suc_m3_h": 178.89111586751983,
+        "W_comp_kW": 29.467208416741038,
+        "W_pumps_kW": 0.0004228498086349975,
+        "P_evap_bar": 2.152467321462289,
+        "P_evap_out_bar": 2.1365736725785114,
+        "P_cond_bar": 15.886766515675914,
+        "PR": 7.4356277621370594,
+        "T_dis_C": 151.4860785084802,
+        "dis_SH_K": 31.161454826952138,
+        "glide_cond_K": 0.0,
+        "glide_evap_K": 0.0,
+        "sbg_cond": 1.0,
+        "sbg_evap": 1.0,
+        "dP_evap_kPa": 1.5893648883777787,
+        "dP_cond_kPa": 4.704850410795538,
+        "pinch_cond_K": 0.2705104059011205,
+        "pinch_evap_K": 0.13321704694499203,
+        "gwp": 4.5,
+        "is_pfas": true,
+        "I_comp_kW": 6.42283270019737,
+        "I_cond_kW": 5.539266543258416,
+        "I_evap_kW": 3.454481129446231,
+        "I_exp_kW": 1.9685005980689696,
+        "I_ihx_ft_kW": 0.2673396602995214,
+        "I_pumps_kW": 0.0004228498086349975,
+        "z_evap": [
+          1.0
+        ]
+      },
+      "fluid_short": "R1233zdE",
+      "top_diverse": [
+        {
+          "fluid": "R1233zdE",
+          "topology": "FTVI_IHX",
+          "COP_sys": 3.393554069393949,
+          "LCOH": 43.28292685820727,
+          "VHC": 2012.3973080172561,
+          "P_suc": 2.1365736725785114,
+          "glide_c": 0.0,
+          "glide_e": 0.0
+        },
+        {
+          "fluid": "nC4",
+          "topology": "IHX_SUBCOOL",
+          "COP_sys": 3.328981472206389,
+          "LCOH": 41.54657889802967,
+          "VHC": 2597.2597006550673,
+          "P_suc": 3.758814851245639,
+          "glide_c": 0.0,
+          "glide_e": 0.0
+        },
+        {
+          "fluid": "iC5",
+          "topology": "IHX_SUBCOOL",
+          "COP_sys": 3.195884474621356,
+          "LCOH": 47.022360988079186,
+          "VHC": 1193.6411734351611,
+          "P_suc": 1.4817313100373355,
+          "glide_c": 0.0,
+          "glide_e": 0.0
+        }
+      ]
+    },
+    "NAT_ZEO_COP": {
+      "design": {
+        "label": "CHEMICAL_135C_NAT_ZEO_COP_g16_6",
+        "duty_name": "CHEMICAL_135C",
+        "topology": "IHX_SUBCOOL",
+        "ihx_eff": 0.3755047074206165,
+        "ft_pr_bias": 1.0,
+        "components": [
+          "CarbonDioxide",
+          "n-Butane"
+        ],
+        "mole_fractions": [
+          0.23128633367370754,
+          0.7687136663262925
+        ],
+        "cond_area_frac": 0.5571473316178517,
+        "cond_hx": {
+          "name": "cond",
+          "area_m2": 10.02865196912133,
+          "plate_length_m": 0.9488104552251561,
+          "plate_width_m": 0.33819142272142144,
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 2.0105422825724055,
+          "plate_thick_mm": 0.4
+        },
+        "evap_hx": {
+          "name": "evap",
+          "area_m2": 7.971348030878669,
+          "plate_length_m": 0.808490616143478,
+          "plate_width_m": 0.14,
+          "chevron_deg": 64.90974131445674,
+          "channel_gap_mm": 1.8,
+          "plate_thick_mm": 0.4
+        },
+        "superheat_K": 13.301072530519374,
+        "subcool_K": 14.659968154669697
+      },
+      "eval": {
+        "label": "CHEMICAL_135C_NAT_ZEO_COP_g16_6",
+        "duty_name": "CHEMICAL_135C",
+        "feasible": true,
+        "violations": [],
+        "COP_sys": 4.420029414000974,
+        "COP_lorenz_ideal": 9.461425454098453,
+        "eta_lorenz": 0.4671631600803162,
+        "LCOH_usd_MWh": 32.489027706632044,
+        "CAPEX_usd": 59015.94287045646,
+        "VHC_kJ_m3": 6604.61518112371,
+        "V_suc_m3_h": 54.50733920560525,
+        "W_comp_kW": 22.622075158617896,
+        "W_pumps_kW": 0.0022086715389782064,
+        "P_evap_bar": 8.76990655892578,
+        "P_evap_out_bar": 8.700895906490484,
+        "P_cond_bar": 37.10193862033074,
+        "PR": 4.264151533252378,
+        "T_dis_C": 145.1029414064255,
+        "dis_SH_K": 19.66617497169716,
+        "glide_cond_K": 50.7401031837868,
+        "glide_evap_K": 79.18808450680902,
+        "sbg_cond": 0.8371530541734294,
+        "sbg_evap": 0.6675345879818889,
+        "dP_evap_kPa": 6.901065243529505,
+        "dP_cond_kPa": 0.9170399404009804,
+        "pinch_cond_K": 0.5480938975766207,
+        "pinch_evap_K": 1.2577604899637436,
+        "gwp": 2.628889838089404,
+        "is_pfas": false,
+        "I_comp_kW": 4.7659493258467105,
+        "I_cond_kW": 1.8399965769088178,
+        "I_evap_kW": 1.1292990321744767,
+        "I_exp_kW": 3.669309132850171,
+        "I_ihx_ft_kW": 0.0,
+        "I_pumps_kW": 0.0022086715389782064,
+        "z_evap": [
+          0.23128633367370754,
+          0.7687136663262925
+        ]
+      },
+      "fluid_short": "CO2(23%)+nC4(77%)",
+      "top_diverse": [
+        {
+          "fluid": "CO2(23%)+nC4(77%)",
+          "topology": "IHX_SUBCOOL",
+          "COP_sys": 4.420029414000974,
+          "LCOH": 32.489027706632044,
+          "VHC": 6604.61518112371,
+          "P_suc": 8.700895906490484,
+          "glide_c": 50.7401031837868,
+          "glide_e": 79.18808450680902
+        }
+      ]
+    },
+    "NAT_ZEO_LCOH": {
+      "design": {
+        "label": "CHEMICAL_135C_NAT_ZEO_LCOH_g14_42",
+        "duty_name": "CHEMICAL_135C",
+        "topology": "IHX_SUBCOOL",
+        "ihx_eff": 0.82,
+        "ft_pr_bias": 1.0,
+        "components": [
+          "Propane",
+          "n-Pentane"
+        ],
+        "mole_fractions": [
+          0.7211872249089702,
+          0.27881277509102975
+        ],
+        "cond_area_frac": 0.5563201328230479,
+        "cond_hx": {
+          "name": "cond",
+          "area_m2": 10.013762390814863,
+          "plate_length_m": 0.7227987122411114,
+          "plate_width_m": 0.32774979595238996,
+          "chevron_deg": 62.274085437253284,
+          "channel_gap_mm": 1.8,
+          "plate_thick_mm": 0.4
+        },
+        "evap_hx": {
+          "name": "evap",
+          "area_m2": 7.986237609185137,
+          "plate_length_m": 0.699582947404081,
+          "plate_width_m": 0.1702711630802864,
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 1.8,
+          "plate_thick_mm": 0.4
+        },
+        "superheat_K": 5.017151136722697,
+        "subcool_K": 15.0
+      },
+      "eval": {
+        "label": "CHEMICAL_135C_NAT_ZEO_LCOH_g14_42",
+        "duty_name": "CHEMICAL_135C",
+        "feasible": true,
+        "violations": [],
+        "COP_sys": 4.15272231332185,
+        "COP_lorenz_ideal": 9.461425454098453,
+        "eta_lorenz": 0.4389108526477894,
+        "LCOH_usd_MWh": 34.270440398305524,
+        "CAPEX_usd": 61435.4153680454,
+        "VHC_kJ_m3": 5404.309689264394,
+        "V_suc_m3_h": 66.61350305574388,
+        "W_comp_kW": 24.079154680643242,
+        "W_pumps_kW": 0.0014344979786962934,
+        "P_evap_bar": 8.29681385434978,
+        "P_evap_out_bar": 8.236235722941862,
+        "P_cond_bar": 30.6737808361419,
+        "PR": 3.7242475650254554,
+        "T_dis_C": 143.46509147275094,
+        "dis_SH_K": 20.621449314001893,
+        "glide_cond_K": 22.498978184421446,
+        "glide_evap_K": 35.308337223219326,
+        "sbg_cond": 0.8224971747052482,
+        "sbg_evap": 0.5620472949452713,
+        "dP_evap_kPa": 6.057813140791841,
+        "dP_cond_kPa": 0.7908615755955689,
+        "pinch_cond_K": 1.013179191787458,
+        "pinch_evap_K": 0.922337424295165,
+        "gwp": 3.0,
+        "is_pfas": false,
+        "I_comp_kW": 5.057438279552234,
+        "I_cond_kW": 3.368740049888081,
+        "I_evap_kW": 0.9298902436893146,
+        "I_exp_kW": 3.3284998073658616,
+        "I_ihx_ft_kW": 0.0679506580015584,
+        "I_pumps_kW": 0.0014344979786962934,
+        "z_evap": [
+          0.7211872249089702,
+          0.27881277509102975
+        ]
+      },
+      "fluid_short": "C3(72%)+nC5(28%)",
+      "top_diverse": [
+        {
+          "fluid": "C3(72%)+nC5(28%)",
+          "topology": "IHX_SUBCOOL",
+          "COP_sys": 4.15272231332185,
+          "LCOH": 34.270440398305524,
+          "VHC": 5404.309689264394,
+          "P_suc": 8.236235722941862,
+          "glide_c": 22.498978184421446,
+          "glide_e": 35.308337223219326
+        }
+      ]
+    }
+  }
+}

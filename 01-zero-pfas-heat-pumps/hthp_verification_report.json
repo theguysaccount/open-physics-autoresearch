@@ -1,0 +1,530 @@
+{
+  "DAIRY_90C": {
+    "PURE_CEILING": {
+      "fluid": "R-290",
+      "topology": "IHX_SUBCOOL",
+      "mesh_n20_n40_n80": [
+        4.2339,
+        4.2317,
+        4.2238
+      ],
+      "mesh_drift_pct": -0.237,
+      "COP_n80": 4.2238,
+      "eta_lorenz_pct": 37.1,
+      "LCOH_n80": 33.97,
+      "CAPEX_usd": 61639.0,
+      "VHC_kJ_m3": 5295.0,
+      "P_suc_bar": 8.33,
+      "P_cond_bar": 27.9,
+      "T_dis_C": 115.3,
+      "glide_cond_K": 0.0,
+      "glide_evap_K": 0.0,
+      "dual_eos_pcsaft": {
+        "supported": true,
+        "cop_heos_thermo": 4.102,
+        "cop_pcsaft_thermo": 4.1,
+        "cop_diff_pct": -0.04,
+        "glide_cond_heos_K": 0.0,
+        "glide_cond_pcsaft_K": 0.0,
+        "glide_evap_heos_K": 0.0,
+        "glide_evap_pcsaft_K": 0.0
+      },
+      "rayleigh_leak_20pct": null,
+      "mc_n_conv": 64,
+      "mc_COP_mean": 4.2407,
+      "mc_COP_std": 0.0174,
+      "mc_COP_p05_p95": [
+        4.1969,
+        4.2595
+      ],
+      "mc_LCOH_mean": 33.89,
+      "exergy_kW": {
+        "Comp": 5.01,
+        "Cond": 3.94,
+        "Evap": 3.08,
+        "Exp": 1.74,
+        "IHX_FT": 0.38,
+        "Pumps": 0.0,
+        "Total": 14.15
+      }
+    },
+    "NAT_ZEO_COP": {
+      "fluid": "R-290 47.8% / R-601a 52.2%",
+      "topology": "BASIC_1STAGE",
+      "mesh_n20_n40_n80": [
+        5.3417,
+        5.3271,
+        5.3265
+      ],
+      "mesh_drift_pct": -0.284,
+      "COP_n80": 5.3265,
+      "eta_lorenz_pct": 46.79,
+      "LCOH_n80": 32.02,
+      "CAPEX_usd": 71489.0,
+      "VHC_kJ_m3": 2399.0,
+      "P_suc_bar": 2.72,
+      "P_cond_bar": 10.36,
+      "T_dis_C": 93.2,
+      "glide_cond_K": 32.4,
+      "glide_evap_K": 37.0,
+      "dual_eos_pcsaft": {
+        "supported": true,
+        "cop_heos_thermo": 5.447,
+        "cop_pcsaft_thermo": 5.425,
+        "cop_diff_pct": -0.4,
+        "glide_cond_heos_K": 32.42,
+        "glide_cond_pcsaft_K": 30.64,
+        "glide_evap_heos_K": 37.01,
+        "glide_evap_pcsaft_K": 35.04
+      },
+      "rayleigh_leak_20pct": {
+        "z_orig": [
+          0.478,
+          0.522
+        ],
+        "z_leaked": [
+          0.392,
+          0.608
+        ],
+        "COP_orig": 5.327,
+        "COP_leaked": 5.25,
+        "COP_delta_pct": -1.44,
+        "P_suc_leaked_bar": 2.25,
+        "still_above_atm": true
+      },
+      "mc_n_conv": 64,
+      "mc_COP_mean": 5.3254,
+      "mc_COP_std": 0.0434,
+      "mc_COP_p05_p95": [
+        5.2318,
+        5.394
+      ],
+      "mc_LCOH_mean": 32.04,
+      "exergy_kW": {
+        "Comp": 4.07,
+        "Cond": 2.49,
+        "Evap": 1.25,
+        "Exp": 1.56,
+        "IHX_FT": 0.0,
+        "Pumps": 0.0,
+        "Total": 9.37
+      }
+    },
+    "NAT_ZEO_LCOH": {
+      "fluid": "R-290 81.0% / R-601a 19.0%",
+      "topology": "IHX_SUBCOOL",
+      "mesh_n20_n40_n80": [
+        4.5007,
+        4.5069,
+        4.5031
+      ],
+      "mesh_drift_pct": 0.052,
+      "COP_n80": 4.5031,
+      "eta_lorenz_pct": 39.56,
+      "LCOH_n80": 33.26,
+      "CAPEX_usd": 64017.0,
+      "VHC_kJ_m3": 3925.0,
+      "P_suc_bar": 5.84,
+      "P_cond_bar": 19.5,
+      "T_dis_C": 98.8,
+      "glide_cond_K": 18.5,
+      "glide_evap_K": 24.6,
+      "dual_eos_pcsaft": {
+        "supported": true,
+        "cop_heos_thermo": 4.527,
+        "cop_pcsaft_thermo": 4.571,
+        "cop_diff_pct": 0.98,
+        "glide_cond_heos_K": 18.54,
+        "glide_cond_pcsaft_K": 20.65,
+        "glide_evap_heos_K": 24.6,
+        "glide_evap_pcsaft_K": 26.52
+      },
+      "rayleigh_leak_20pct": {
+        "z_orig": [
+          0.81,
+          0.19
+        ],
+        "z_leaked": [
+          0.774,
+          0.226
+        ],
+        "COP_orig": 4.503,
+        "COP_leaked": 4.593,
+        "COP_delta_pct": 2.0,
+        "P_suc_leaked_bar": 5.28,
+        "still_above_atm": true
+      },
+      "mc_n_conv": 64,
+      "mc_COP_mean": 4.5064,
+      "mc_COP_std": 0.0415,
+      "mc_COP_p05_p95": [
+        4.4251,
+        4.5807
+      ],
+      "mc_LCOH_mean": 33.25,
+      "exergy_kW": {
+        "Comp": 4.82,
+        "Cond": 3.39,
+        "Evap": 1.39,
+        "Exp": 3.22,
+        "IHX_FT": 0.02,
+        "Pumps": 0.0,
+        "Total": 12.84
+      }
+    },
+    "pairwise_summary": {
+      "COP_gain_vs_pure_opt_pct": 26.11,
+      "LCOH_change_vs_pure_opt_pct": -2.1,
+      "MC_COP_win_rate_pct": 100.0,
+      "MC_LCOH_win_rate_pct": 100.0
+    }
+  },
+  "DISTRICT_110C": {
+    "PURE_CEILING": {
+      "fluid": "R-1233zd(E)",
+      "topology": "FTVI_IHX",
+      "mesh_n20_n40_n80": [
+        3.6182,
+        3.5763,
+        3.5693
+      ],
+      "mesh_drift_pct": -1.351,
+      "COP_n80": 3.5693,
+      "eta_lorenz_pct": 35.04,
+      "LCOH_n80": 44.59,
+      "CAPEX_usd": 92492.0,
+      "VHC_kJ_m3": 1314.0,
+      "P_suc_bar": 1.28,
+      "P_cond_bar": 10.1,
+      "T_dis_C": 130.5,
+      "glide_cond_K": 0.0,
+      "glide_evap_K": 0.0,
+      "dual_eos_pcsaft": {
+        "supported": false,
+        "reason": "No ThermoPack map for ('R1233zd(E)',)"
+      },
+      "rayleigh_leak_20pct": null,
+      "mc_n_conv": 64,
+      "mc_COP_mean": 3.5698,
+      "mc_COP_std": 0.0098,
+      "mc_COP_p05_p95": [
+        3.5504,
+        3.5808
+      ],
+      "mc_LCOH_mean": 44.6,
+      "exergy_kW": {
+        "Comp": 6.09,
+        "Cond": 6.06,
+        "Evap": 3.34,
+        "Exp": 1.38,
+        "IHX_FT": 0.2,
+        "Pumps": 0.0,
+        "Total": 17.08
+      }
+    },
+    "NAT_ZEO_COP": {
+      "fluid": "CO2 18.6% / R-600 81.4%",
+      "topology": "IHX_SUBCOOL",
+      "mesh_n20_n40_n80": [
+        4.7505,
+        4.7431,
+        4.7313
+      ],
+      "mesh_drift_pct": -0.404,
+      "COP_n80": 4.7313,
+      "eta_lorenz_pct": 46.45,
+      "LCOH_n80": 32.26,
+      "CAPEX_usd": 63610.0,
+      "VHC_kJ_m3": 4240.0,
+      "P_suc_bar": 5.0,
+      "P_cond_bar": 21.89,
+      "T_dis_C": 118.9,
+      "glide_cond_K": 60.1,
+      "glide_evap_K": 76.2,
+      "dual_eos_pcsaft": {
+        "supported": true,
+        "cop_heos_thermo": 4.783,
+        "cop_pcsaft_thermo": 4.666,
+        "cop_diff_pct": -2.44,
+        "glide_cond_heos_K": 60.12,
+        "glide_cond_pcsaft_K": 54.49,
+        "glide_evap_heos_K": 76.25,
+        "glide_evap_pcsaft_K": 70.48
+      },
+      "rayleigh_leak_20pct": {
+        "z_orig": [
+          0.186,
+          0.814
+        ],
+        "z_leaked": [
+          0.087,
+          0.913
+        ],
+        "COP_orig": 4.731,
+        "COP_leaked": 0.0,
+        "COP_delta_pct": -100.0,
+        "P_suc_leaked_bar": 0.0,
+        "still_above_atm": false
+      },
+      "mc_n_conv": 64,
+      "mc_COP_mean": 4.7171,
+      "mc_COP_std": 0.0316,
+      "mc_COP_p05_p95": [
+        4.6499,
+        4.7661
+      ],
+      "mc_LCOH_mean": 32.32,
+      "exergy_kW": {
+        "Comp": 4.49,
+        "Cond": 2.41,
+        "Evap": 1.2,
+        "Exp": 2.59,
+        "IHX_FT": 0.0,
+        "Pumps": 0.0,
+        "Total": 10.7
+      }
+    },
+    "NAT_ZEO_LCOH": {
+      "fluid": "CO2 19.3% / R-600 80.7%",
+      "topology": "BASIC_1STAGE",
+      "mesh_n20_n40_n80": [
+        4.7488,
+        4.7318,
+        4.7281
+      ],
+      "mesh_drift_pct": -0.437,
+      "COP_n80": 4.7281,
+      "eta_lorenz_pct": 46.42,
+      "LCOH_n80": 32.02,
+      "CAPEX_usd": 62488.0,
+      "VHC_kJ_m3": 4333.0,
+      "P_suc_bar": 5.13,
+      "P_cond_bar": 22.36,
+      "T_dis_C": 118.7,
+      "glide_cond_K": 61.2,
+      "glide_evap_K": 77.0,
+      "dual_eos_pcsaft": {
+        "supported": true,
+        "cop_heos_thermo": 4.767,
+        "cop_pcsaft_thermo": 4.65,
+        "cop_diff_pct": -2.46,
+        "glide_cond_heos_K": 61.24,
+        "glide_cond_pcsaft_K": 55.57,
+        "glide_evap_heos_K": 76.98,
+        "glide_evap_pcsaft_K": 71.35
+      },
+      "rayleigh_leak_20pct": {
+        "z_orig": [
+          0.193,
+          0.807
+        ],
+        "z_leaked": [
+          0.091,
+          0.909
+        ],
+        "COP_orig": 4.728,
+        "COP_leaked": 0.0,
+        "COP_delta_pct": -100.0,
+        "P_suc_leaked_bar": 0.0,
+        "still_above_atm": false
+      },
+      "mc_n_conv": 64,
+      "mc_COP_mean": 4.7112,
+      "mc_COP_std": 0.0373,
+      "mc_COP_p05_p95": [
+        4.6301,
+        4.7736
+      ],
+      "mc_LCOH_mean": 32.09,
+      "exergy_kW": {
+        "Comp": 4.51,
+        "Cond": 2.38,
+        "Evap": 1.18,
+        "Exp": 2.68,
+        "IHX_FT": 0.0,
+        "Pumps": 0.0,
+        "Total": 10.75
+      }
+    },
+    "pairwise_summary": {
+      "COP_gain_vs_pure_opt_pct": 32.55,
+      "LCOH_change_vs_pure_opt_pct": -28.2,
+      "MC_COP_win_rate_pct": 100.0,
+      "MC_LCOH_win_rate_pct": 100.0
+    }
+  },
+  "CHEMICAL_135C": {
+    "PURE_CEILING": {
+      "fluid": "R-1233zd(E)",
+      "topology": "FTVI_IHX",
+      "mesh_n20_n40_n80": [
+        3.3936,
+        3.3917,
+        3.3915
+      ],
+      "mesh_drift_pct": -0.061,
+      "COP_n80": 3.3915,
+      "eta_lorenz_pct": 35.85,
+      "LCOH_n80": 43.3,
+      "CAPEX_usd": 81180.0,
+      "VHC_kJ_m3": 2012.0,
+      "P_suc_bar": 2.14,
+      "P_cond_bar": 15.9,
+      "T_dis_C": 151.5,
+      "glide_cond_K": 0.0,
+      "glide_evap_K": 0.0,
+      "dual_eos_pcsaft": {
+        "supported": false,
+        "reason": "No ThermoPack map for ('R1233zd(E)',)"
+      },
+      "rayleigh_leak_20pct": null,
+      "mc_n_conv": 60,
+      "mc_COP_mean": 3.4048,
+      "mc_COP_std": 0.0084,
+      "mc_COP_p05_p95": [
+        3.3892,
+        3.4154
+      ],
+      "mc_LCOH_mean": 43.2,
+      "exergy_kW": {
+        "Comp": 6.43,
+        "Cond": 5.55,
+        "Evap": 3.47,
+        "Exp": 1.97,
+        "IHX_FT": 0.27,
+        "Pumps": 0.0,
+        "Total": 17.68
+      }
+    },
+    "NAT_ZEO_COP": {
+      "fluid": "CO2 23.1% / R-600 76.9%",
+      "topology": "IHX_SUBCOOL",
+      "mesh_n20_n40_n80": [
+        4.42,
+        4.4204,
+        4.4204
+      ],
+      "mesh_drift_pct": 0.009,
+      "COP_n80": 4.4204,
+      "eta_lorenz_pct": 46.72,
+      "LCOH_n80": 32.49,
+      "CAPEX_usd": 59016.0,
+      "VHC_kJ_m3": 6604.0,
+      "P_suc_bar": 8.7,
+      "P_cond_bar": 37.1,
+      "T_dis_C": 145.1,
+      "glide_cond_K": 50.7,
+      "glide_evap_K": 79.2,
+      "dual_eos_pcsaft": {
+        "supported": true,
+        "cop_heos_thermo": 4.445,
+        "cop_pcsaft_thermo": 4.406,
+        "cop_diff_pct": -0.88,
+        "glide_cond_heos_K": 50.75,
+        "glide_cond_pcsaft_K": 47.86,
+        "glide_evap_heos_K": 79.19,
+        "glide_evap_pcsaft_K": 73.58
+      },
+      "rayleigh_leak_20pct": {
+        "z_orig": [
+          0.231,
+          0.769
+        ],
+        "z_leaked": [
+          0.119,
+          0.881
+        ],
+        "COP_orig": 4.42,
+        "COP_leaked": 3.668,
+        "COP_delta_pct": -17.01,
+        "P_suc_leaked_bar": 5.57,
+        "still_above_atm": true
+      },
+      "mc_n_conv": 64,
+      "mc_COP_mean": 4.4157,
+      "mc_COP_std": 0.034,
+      "mc_COP_p05_p95": [
+        4.3411,
+        4.4714
+      ],
+      "mc_LCOH_mean": 32.51,
+      "exergy_kW": {
+        "Comp": 4.77,
+        "Cond": 1.84,
+        "Evap": 1.14,
+        "Exp": 3.67,
+        "IHX_FT": 0.0,
+        "Pumps": 0.0,
+        "Total": 11.41
+      }
+    },
+    "NAT_ZEO_LCOH": {
+      "fluid": "R-290 72.1% / R-601 27.9%",
+      "topology": "IHX_SUBCOOL",
+      "mesh_n20_n40_n80": [
+        4.1527,
+        4.1432,
+        4.1402
+      ],
+      "mesh_drift_pct": -0.301,
+      "COP_n80": 4.1402,
+      "eta_lorenz_pct": 43.76,
+      "LCOH_n80": 34.33,
+      "CAPEX_usd": 61444.0,
+      "VHC_kJ_m3": 5399.0,
+      "P_suc_bar": 8.24,
+      "P_cond_bar": 30.76,
+      "T_dis_C": 143.8,
+      "glide_cond_K": 22.4,
+      "glide_evap_K": 35.3,
+      "dual_eos_pcsaft": {
+        "supported": true,
+        "cop_heos_thermo": 4.093,
+        "cop_pcsaft_thermo": 4.126,
+        "cop_diff_pct": 0.81,
+        "glide_cond_heos_K": 22.44,
+        "glide_cond_pcsaft_K": 23.38,
+        "glide_evap_heos_K": 35.31,
+        "glide_evap_pcsaft_K": 36.05
+      },
+      "rayleigh_leak_20pct": {
+        "z_orig": [
+          0.721,
+          0.279
+        ],
+        "z_leaked": [
+          0.666,
+          0.334
+        ],
+        "COP_orig": 4.14,
+        "COP_leaked": 4.164,
+        "COP_delta_pct": 0.56,
+        "P_suc_leaked_bar": 7.16,
+        "still_above_atm": true
+      },
+      "mc_n_conv": 64,
+      "mc_COP_mean": 4.1338,
+      "mc_COP_std": 0.0164,
+      "mc_COP_p05_p95": [
+        4.0999,
+        4.1596
+      ],
+      "mc_LCOH_mean": 34.37,
+      "exergy_kW": {
+        "Comp": 5.07,
+        "Cond": 3.41,
+        "Evap": 0.93,
+        "Exp": 3.34,
+        "IHX_FT": 0.07,
+        "Pumps": 0.0,
+        "Total": 12.83
+      }
+    },
+    "pairwise_summary": {
+      "COP_gain_vs_pure_opt_pct": 30.34,
+      "LCOH_change_vs_pure_opt_pct": -20.71,
+      "MC_COP_win_rate_pct": 100.0,
+      "MC_LCOH_win_rate_pct": 100.0
+    }
+  }
+}

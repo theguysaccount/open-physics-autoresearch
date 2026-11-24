@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "Open Physics Autoresearch: Zero-PFAS Natural-Zeotropic Heat Pumps and Rare-Earth-Free Traction Motors"
+message: "If you use these physics engines, CAD specifications, verification datasets, or preprint manuscripts, please cite this repository."
+type: software
+authors:
+  - family-names: "Jay"
+    given-names: "Jack"
+    website: "https://jackjay.io"
+repository-code: "https://github.com/theguysaccount/open-physics-autoresearch"
+url: "https://github.com/theguysaccount/open-physics-autoresearch"
+version: "1.0.0"
+date-released: "2026-11-24"
+license: MIT
+keywords:
+  - natural zeotropic refrigerants
+  - Lorenz heat pump cycle
+  - zero-PFAS industrial heat pumps
+  - rare-earth-free electric motors
+  - ferrite PM-assisted synchronous reluctance
+  - nonlinear 2D Maxwell FEA
+  - SiC inverter kVA co-design
+  - autonomous scientific discovery

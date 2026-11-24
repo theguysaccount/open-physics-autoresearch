@@ -1,0 +1,6 @@
+coolprop==8.1.0
+thermopack==2.2.3
+numpy>=2.0
+scipy>=1.14
+matplotlib>=3.9
+typst>=0.14

@@ -1,0 +1,8 @@
+gmsh>=4.13
+scikit-fem>=11.0
+numba>=0.60
+numpy>=2.0
+scipy>=1.14
+matplotlib>=3.9
+meshio>=5.3
+typst>=0.14

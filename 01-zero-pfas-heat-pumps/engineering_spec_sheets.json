@@ -1,0 +1,731 @@
+{
+  "regime_A_air_to_air_7kW": {
+    "system_name": "7 kW Dual-Climate Reversible Split AC / Cold-Climate Heat Pump (Zero-PFAS Natural)",
+    "refrigerant": {
+      "blend": "R-1270 14.8% / R-290 85.2%",
+      "components": [
+        "Propylene",
+        "Propane"
+      ],
+      "mole_fractions": [
+        0.148,
+        0.852
+      ],
+      "GWP100": 2.86,
+      "safety_class": "A3 (IEC 60335-2-40 Ed.7 compliant, <50% of 988g indoor limit)",
+      "rated_charge_g": 478.8,
+      "phase_glide_K": 0.28
+    },
+    "cycle_architecture": {
+      "topology": "IHX_SUBCOOL",
+      "ihx_effectiveness": 0.738,
+      "compressor_displacement_cc_per_rev": 27.16,
+      "speed_range_Hz": [
+        20.0,
+        110.0
+      ],
+      "incremental_bom_usd": 59.7
+    },
+    "indoor_microchannel_coil_CAD": {
+      "face_W_x_H_mm": [
+        780.0,
+        300.0
+      ],
+      "n_rows": 3,
+      "slab_depth_mm": 11.65,
+      "total_core_depth_mm": 39.96,
+      "tube_pitch_mm": 10.16,
+      "tube_minor_height_mm": 1.73,
+      "port_hydraulic_diameter_mm": 0.97,
+      "ports_per_tube": 10,
+      "tubes_per_row": 30,
+      "louver_fin_pitch_mm": 1.93,
+      "pass_fractions": [
+        1.0
+      ],
+      "reversible_counterflow_bridge": true,
+      "aluminum_mass_kg": 3.17,
+      "internal_volume_mL": 974.9
+    },
+    "outdoor_microchannel_coil_CAD": {
+      "face_W_x_H_mm": [
+        850.0,
+        620.0
+      ],
+      "n_rows": 2,
+      "slab_depth_mm": 14.34,
+      "total_core_depth_mm": 31.18,
+      "tube_pitch_mm": 8.11,
+      "tube_minor_height_mm": 1.62,
+      "port_hydraulic_diameter_mm": 0.7,
+      "ports_per_tube": 17,
+      "tubes_per_row": 76,
+      "louver_fin_pitch_mm": 1.44,
+      "pass_fractions": [
+        0.5,
+        0.5
+      ],
+      "reversible_counterflow_bridge": true,
+      "aluminum_mass_kg": 7.26,
+      "internal_volume_mL": 1664.4
+    },
+    "bin_control_schedule": [
+      {
+        "bin": "COOL_46C_T3",
+        "T_out_C": 46.0,
+        "T_in_C": 29.0,
+        "Q_load_W": 6500.0,
+        "v_air_in_m3s": 0.52,
+        "v_air_out_m3s": 0.807,
+        "superheat_K": 5.0,
+        "subcool_K": 2.5,
+        "COP_sys": 3.971,
+        "P_evap_bar": 8.05,
+        "P_cond_bar": 19.29,
+        "T_dis_C": 88.1,
+        "f_comp_Hz": 56.7
+      },
+      {
+        "bin": "COOL_35C_T1",
+        "T_out_C": 35.0,
+        "T_in_C": 27.0,
+        "Q_load_W": 7000.0,
+        "v_air_in_m3s": 0.495,
+        "v_air_out_m3s": 0.838,
+        "superheat_K": 5.1,
+        "subcool_K": 6.5,
+        "COP_sys": 5.168,
+        "P_evap_bar": 7.49,
+        "P_cond_bar": 15.36,
+        "T_dis_C": 68.5,
+        "f_comp_Hz": 57.8
+      },
+      {
+        "bin": "COOL_29C_PL",
+        "T_out_C": 29.0,
+        "T_in_C": 27.0,
+        "Q_load_W": 3850.0,
+        "v_air_in_m3s": 0.459,
+        "v_air_out_m3s": 0.436,
+        "superheat_K": 3.6,
+        "subcool_K": 5.3,
+        "COP_sys": 8.11,
+        "P_evap_bar": 8.5,
+        "P_cond_bar": 13.05,
+        "T_dis_C": 51.1,
+        "f_comp_Hz": 26.1
+      },
+      {
+        "bin": "HEAT_12C_PL",
+        "T_out_C": 12.0,
+        "T_in_C": 20.0,
+        "Q_load_W": 2800.0,
+        "v_air_in_m3s": 0.277,
+        "v_air_out_m3s": 0.471,
+        "superheat_K": 4.4,
+        "subcool_K": 3.2,
+        "COP_sys": 7.281,
+        "P_evap_bar": 6.22,
+        "P_cond_bar": 10.71,
+        "T_dis_C": 48.8,
+        "f_comp_Hz": 23.1
+      },
+      {
+        "bin": "HEAT_7C_RATED",
+        "T_out_C": 7.0,
+        "T_in_C": 20.0,
+        "Q_load_W": 4550.0,
+        "v_air_in_m3s": 0.491,
+        "v_air_out_m3s": 0.497,
+        "superheat_K": 5.6,
+        "subcool_K": 2.2,
+        "COP_sys": 5.799,
+        "P_evap_bar": 5.08,
+        "P_cond_bar": 10.79,
+        "T_dis_C": 57.4,
+        "f_comp_Hz": 45.7
+      },
+      {
+        "bin": "HEAT_-7C_COLD",
+        "T_out_C": -7.0,
+        "T_in_C": 20.0,
+        "Q_load_W": 6200.0,
+        "v_air_in_m3s": 0.482,
+        "v_air_out_m3s": 0.656,
+        "superheat_K": 4.4,
+        "subcool_K": 11.2,
+        "COP_sys": 3.923,
+        "P_evap_bar": 3.34,
+        "P_cond_bar": 11.84,
+        "T_dis_C": 73.8,
+        "f_comp_Hz": 88.4
+      }
+    ],
+    "verified_performance": {
+      "ASPF_n60": 5.1676,
+      "SEER_cool": 5.253,
+      "SCOP_heat": 5.043,
+      "COP_46C_T3": 3.971,
+      "COP_m7C_cold": 3.923,
+      "rayleigh_leak_20pct_delta_pct": -0.24,
+      "monte_carlo_mean_std": [
+        5.1649,
+        0.0368
+      ]
+    }
+  },
+  "regime_B_industrial_HTHP_100kW": {
+    "DAIRY_90C": {
+      "NAT_ZEO_COP": {
+        "duty": {
+          "sink_C": [
+            35.0,
+            90.0
+          ],
+          "source_C": [
+            45.0,
+            20.0
+          ],
+          "Q_cond_kW": 100.0
+        },
+        "refrigerant": {
+          "blend": "R-290 47.8% / R-601a 52.2%",
+          "components": [
+            "Propane",
+            "Isopentane"
+          ],
+          "mole_fractions": [
+            0.4784,
+            0.5216
+          ],
+          "GWP100": 3.0,
+          "PFAS_free": true,
+          "cond_glide_K": 32.4,
+          "evap_glide_K": 37.0
+        },
+        "cycle_and_compressor": {
+          "topology": "BASIC_1STAGE",
+          "ihx_effectiveness": 0.0,
+          "superheat_K": 5.2,
+          "subcool_K": 15.0,
+          "P_evap_out_bar": 2.72,
+          "P_cond_bar": 10.36,
+          "PR": 3.8,
+          "T_dis_C": 93.2,
+          "dis_superheat_K": 4.0,
+          "VHC_kJ_m3": 2399.0,
+          "required_suction_flow_m3_h": 150.1,
+          "W_comp_kW": 18.77,
+          "W_pumps_kW": 0.0
+        },
+        "condenser_BPHE_CAD": {
+          "area_m2": 9.56,
+          "L_x_W_mm": [
+            665.0,
+            249.0
+          ],
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 1.8,
+          "channels_per_side": 24,
+          "pinch_min_K": 0.51
+        },
+        "evaporator_BPHE_CAD": {
+          "area_m2": 8.44,
+          "L_x_W_mm": [
+            792.0,
+            280.0
+          ],
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 2.19,
+          "channels_per_side": 16,
+          "pinch_min_K": 0.24
+        },
+        "verified_metrics": {
+          "COP_sys_n80": 5.327,
+          "eta_lorenz_pct": 46.8,
+          "LCOH_usd_MWh": 32.02,
+          "CAPEX_usd": 71489.0,
+          "dual_eos_pcsaft_dCOP_pct": -0.4,
+          "rayleigh_leak_20pct": {
+            "z_orig": [
+              0.478,
+              0.522
+            ],
+            "z_leaked": [
+              0.392,
+              0.608
+            ],
+            "COP_orig": 5.327,
+            "COP_leaked": 5.25,
+            "COP_delta_pct": -1.44,
+            "P_suc_leaked_bar": 2.25,
+            "still_above_atm": true
+          },
+          "mc_COP_mean_std": [
+            5.3254,
+            0.0434
+          ]
+        }
+      },
+      "NAT_ZEO_LCOH": {
+        "duty": {
+          "sink_C": [
+            35.0,
+            90.0
+          ],
+          "source_C": [
+            45.0,
+            20.0
+          ],
+          "Q_cond_kW": 100.0
+        },
+        "refrigerant": {
+          "blend": "R-290 81.0% / R-601a 19.0%",
+          "components": [
+            "Propane",
+            "Isopentane"
+          ],
+          "mole_fractions": [
+            0.8102,
+            0.1898
+          ],
+          "GWP100": 3.0,
+          "PFAS_free": true,
+          "cond_glide_K": 18.5,
+          "evap_glide_K": 24.6
+        },
+        "cycle_and_compressor": {
+          "topology": "IHX_SUBCOOL",
+          "ihx_effectiveness": 0.05,
+          "superheat_K": 5.2,
+          "subcool_K": 5.5,
+          "P_evap_out_bar": 5.84,
+          "P_cond_bar": 19.5,
+          "PR": 3.34,
+          "T_dis_C": 98.8,
+          "dis_superheat_K": 13.6,
+          "VHC_kJ_m3": 3925.0,
+          "required_suction_flow_m3_h": 91.7,
+          "W_comp_kW": 22.2,
+          "W_pumps_kW": 0.0
+        },
+        "condenser_BPHE_CAD": {
+          "area_m2": 9.76,
+          "L_x_W_mm": [
+            925.0,
+            292.0
+          ],
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 2.14,
+          "channels_per_side": 15,
+          "pinch_min_K": 0.59
+        },
+        "evaporator_BPHE_CAD": {
+          "area_m2": 8.24,
+          "L_x_W_mm": [
+            807.0,
+            268.0
+          ],
+          "chevron_deg": 54.9,
+          "channel_gap_mm": 2.19,
+          "channels_per_side": 16,
+          "pinch_min_K": 1.1
+        },
+        "verified_metrics": {
+          "COP_sys_n80": 4.503,
+          "eta_lorenz_pct": 39.6,
+          "LCOH_usd_MWh": 33.26,
+          "CAPEX_usd": 64017.0,
+          "dual_eos_pcsaft_dCOP_pct": 0.98,
+          "rayleigh_leak_20pct": {
+            "z_orig": [
+              0.81,
+              0.19
+            ],
+            "z_leaked": [
+              0.774,
+              0.226
+            ],
+            "COP_orig": 4.503,
+            "COP_leaked": 4.593,
+            "COP_delta_pct": 2.0,
+            "P_suc_leaked_bar": 5.28,
+            "still_above_atm": true
+          },
+          "mc_COP_mean_std": [
+            4.5064,
+            0.0415
+          ]
+        }
+      }
+    },
+    "DISTRICT_110C": {
+      "NAT_ZEO_COP": {
+        "duty": {
+          "sink_C": [
+            40.0,
+            110.0
+          ],
+          "source_C": [
+            55.0,
+            25.0
+          ],
+          "Q_cond_kW": 100.0
+        },
+        "refrigerant": {
+          "blend": "CO2 18.6% / R-600 81.4%",
+          "components": [
+            "CarbonDioxide",
+            "n-Butane"
+          ],
+          "mole_fractions": [
+            0.1856,
+            0.8144
+          ],
+          "GWP100": 2.71,
+          "PFAS_free": true,
+          "cond_glide_K": 60.1,
+          "evap_glide_K": 76.2
+        },
+        "cycle_and_compressor": {
+          "topology": "IHX_SUBCOOL",
+          "ihx_effectiveness": 0.465,
+          "superheat_K": 12.2,
+          "subcool_K": 3.4,
+          "P_evap_out_bar": 5.0,
+          "P_cond_bar": 21.89,
+          "PR": 4.38,
+          "T_dis_C": 118.9,
+          "dis_superheat_K": 14.5,
+          "VHC_kJ_m3": 4240.0,
+          "required_suction_flow_m3_h": 84.9,
+          "W_comp_kW": 21.13,
+          "W_pumps_kW": 0.0
+        },
+        "condenser_BPHE_CAD": {
+          "area_m2": 9.35,
+          "L_x_W_mm": [
+            909.0,
+            224.0
+          ],
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 1.8,
+          "channels_per_side": 19,
+          "pinch_min_K": 0.45
+        },
+        "evaporator_BPHE_CAD": {
+          "area_m2": 8.65,
+          "L_x_W_mm": [
+            778.0,
+            324.0
+          ],
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 1.81,
+          "channels_per_side": 14,
+          "pinch_min_K": 0.75
+        },
+        "verified_metrics": {
+          "COP_sys_n80": 4.731,
+          "eta_lorenz_pct": 46.4,
+          "LCOH_usd_MWh": 32.26,
+          "CAPEX_usd": 63610.0,
+          "dual_eos_pcsaft_dCOP_pct": -2.44,
+          "rayleigh_leak_20pct": {
+            "z_orig": [
+              0.186,
+              0.814
+            ],
+            "z_leaked": [
+              0.087,
+              0.913
+            ],
+            "COP_orig": 4.731,
+            "COP_leaked": 0.0,
+            "COP_delta_pct": -100.0,
+            "P_suc_leaked_bar": 0.0,
+            "still_above_atm": false
+          },
+          "mc_COP_mean_std": [
+            4.7171,
+            0.0316
+          ]
+        }
+      },
+      "NAT_ZEO_LCOH": {
+        "duty": {
+          "sink_C": [
+            40.0,
+            110.0
+          ],
+          "source_C": [
+            55.0,
+            25.0
+          ],
+          "Q_cond_kW": 100.0
+        },
+        "refrigerant": {
+          "blend": "CO2 19.3% / R-600 80.7%",
+          "components": [
+            "CarbonDioxide",
+            "n-Butane"
+          ],
+          "mole_fractions": [
+            0.1928,
+            0.8072
+          ],
+          "GWP100": 2.69,
+          "PFAS_free": true,
+          "cond_glide_K": 61.2,
+          "evap_glide_K": 77.0
+        },
+        "cycle_and_compressor": {
+          "topology": "BASIC_1STAGE",
+          "ihx_effectiveness": 0.0,
+          "superheat_K": 11.2,
+          "subcool_K": 2.8,
+          "P_evap_out_bar": 5.13,
+          "P_cond_bar": 22.36,
+          "PR": 4.36,
+          "T_dis_C": 118.7,
+          "dis_superheat_K": 13.9,
+          "VHC_kJ_m3": 4333.0,
+          "required_suction_flow_m3_h": 83.1,
+          "W_comp_kW": 21.15,
+          "W_pumps_kW": 0.0
+        },
+        "condenser_BPHE_CAD": {
+          "area_m2": 8.33,
+          "L_x_W_mm": [
+            938.0,
+            227.0
+          ],
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 1.82,
+          "channels_per_side": 16,
+          "pinch_min_K": 0.73
+        },
+        "evaporator_BPHE_CAD": {
+          "area_m2": 9.67,
+          "L_x_W_mm": [
+            948.0,
+            177.0
+          ],
+          "chevron_deg": 64.9,
+          "channel_gap_mm": 2.18,
+          "channels_per_side": 24,
+          "pinch_min_K": 1.19
+        },
+        "verified_metrics": {
+          "COP_sys_n80": 4.728,
+          "eta_lorenz_pct": 46.4,
+          "LCOH_usd_MWh": 32.02,
+          "CAPEX_usd": 62488.0,
+          "dual_eos_pcsaft_dCOP_pct": -2.46,
+          "rayleigh_leak_20pct": {
+            "z_orig": [
+              0.193,
+              0.807
+            ],
+            "z_leaked": [
+              0.091,
+              0.909
+            ],
+            "COP_orig": 4.728,
+            "COP_leaked": 0.0,
+            "COP_delta_pct": -100.0,
+            "P_suc_leaked_bar": 0.0,
+            "still_above_atm": false
+          },
+          "mc_COP_mean_std": [
+            4.7112,
+            0.0373
+          ]
+        }
+      }
+    },
+    "CHEMICAL_135C": {
+      "NAT_ZEO_COP": {
+        "duty": {
+          "sink_C": [
+            60.0,
+            135.0
+          ],
+          "source_C": [
+            75.0,
+            40.0
+          ],
+          "Q_cond_kW": 100.0
+        },
+        "refrigerant": {
+          "blend": "CO2 23.1% / R-600 76.9%",
+          "components": [
+            "CarbonDioxide",
+            "n-Butane"
+          ],
+          "mole_fractions": [
+            0.2313,
+            0.7687
+          ],
+          "GWP100": 2.63,
+          "PFAS_free": true,
+          "cond_glide_K": 50.7,
+          "evap_glide_K": 79.2
+        },
+        "cycle_and_compressor": {
+          "topology": "IHX_SUBCOOL",
+          "ihx_effectiveness": 0.376,
+          "superheat_K": 13.3,
+          "subcool_K": 14.7,
+          "P_evap_out_bar": 8.7,
+          "P_cond_bar": 37.1,
+          "PR": 4.26,
+          "T_dis_C": 145.1,
+          "dis_superheat_K": 19.7,
+          "VHC_kJ_m3": 6604.0,
+          "required_suction_flow_m3_h": 54.5,
+          "W_comp_kW": 22.62,
+          "W_pumps_kW": 0.0
+        },
+        "condenser_BPHE_CAD": {
+          "area_m2": 10.03,
+          "L_x_W_mm": [
+            949.0,
+            338.0
+          ],
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 2.01,
+          "channels_per_side": 13,
+          "pinch_min_K": 0.53
+        },
+        "evaporator_BPHE_CAD": {
+          "area_m2": 7.97,
+          "L_x_W_mm": [
+            808.0,
+            140.0
+          ],
+          "chevron_deg": 64.9,
+          "channel_gap_mm": 1.8,
+          "channels_per_side": 30,
+          "pinch_min_K": 1.26
+        },
+        "verified_metrics": {
+          "COP_sys_n80": 4.42,
+          "eta_lorenz_pct": 46.7,
+          "LCOH_usd_MWh": 32.49,
+          "CAPEX_usd": 59016.0,
+          "dual_eos_pcsaft_dCOP_pct": -0.88,
+          "rayleigh_leak_20pct": {
+            "z_orig": [
+              0.231,
+              0.769
+            ],
+            "z_leaked": [
+              0.119,
+              0.881
+            ],
+            "COP_orig": 4.42,
+            "COP_leaked": 3.668,
+            "COP_delta_pct": -17.01,
+            "P_suc_leaked_bar": 5.57,
+            "still_above_atm": true
+          },
+          "mc_COP_mean_std": [
+            4.4157,
+            0.034
+          ]
+        }
+      },
+      "NAT_ZEO_LCOH": {
+        "duty": {
+          "sink_C": [
+            60.0,
+            135.0
+          ],
+          "source_C": [
+            75.0,
+            40.0
+          ],
+          "Q_cond_kW": 100.0
+        },
+        "refrigerant": {
+          "blend": "R-290 72.1% / R-601 27.9%",
+          "components": [
+            "Propane",
+            "n-Pentane"
+          ],
+          "mole_fractions": [
+            0.7212,
+            0.2788
+          ],
+          "GWP100": 3.0,
+          "PFAS_free": true,
+          "cond_glide_K": 22.4,
+          "evap_glide_K": 35.3
+        },
+        "cycle_and_compressor": {
+          "topology": "IHX_SUBCOOL",
+          "ihx_effectiveness": 0.82,
+          "superheat_K": 5.0,
+          "subcool_K": 15.0,
+          "P_evap_out_bar": 8.24,
+          "P_cond_bar": 30.76,
+          "PR": 3.74,
+          "T_dis_C": 143.8,
+          "dis_superheat_K": 20.8,
+          "VHC_kJ_m3": 5399.0,
+          "required_suction_flow_m3_h": 66.7,
+          "W_comp_kW": 24.15,
+          "W_pumps_kW": 0.0
+        },
+        "condenser_BPHE_CAD": {
+          "area_m2": 10.01,
+          "L_x_W_mm": [
+            723.0,
+            328.0
+          ],
+          "chevron_deg": 62.3,
+          "channel_gap_mm": 1.8,
+          "channels_per_side": 18,
+          "pinch_min_K": 0.84
+        },
+        "evaporator_BPHE_CAD": {
+          "area_m2": 7.99,
+          "L_x_W_mm": [
+            700.0,
+            170.0
+          ],
+          "chevron_deg": 65.0,
+          "channel_gap_mm": 1.8,
+          "channels_per_side": 28,
+          "pinch_min_K": 0.91
+        },
+        "verified_metrics": {
+          "COP_sys_n80": 4.14,
+          "eta_lorenz_pct": 43.8,
+          "LCOH_usd_MWh": 34.33,
+          "CAPEX_usd": 61444.0,
+          "dual_eos_pcsaft_dCOP_pct": 0.81,
+          "rayleigh_leak_20pct": {
+            "z_orig": [
+              0.721,
+              0.279
+            ],
+            "z_leaked": [
+              0.666,
+              0.334
+            ],
+            "COP_orig": 4.14,
+            "COP_leaked": 4.164,
+            "COP_delta_pct": 0.56,
+            "P_suc_leaked_bar": 7.16,
+            "still_above_atm": true
+          },
+          "mc_COP_mean_std": [
+            4.1338,
+            0.0164
+          ]
+        }
+      }
+    }
+  }
+}
